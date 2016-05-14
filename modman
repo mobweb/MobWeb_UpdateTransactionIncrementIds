@@ -1,0 +1,6 @@
+app/code/community/MobWeb/UpdateTransactionIncrementIds app/code/community/MobWeb/UpdateTransactionIncrementIds/
+
+app/etc/modules/MobWeb_UpdateTransactionIncrementIds.xml app/etc/modules/MobWeb_UpdateTransactionIncrementIds.xml
+
+# Clear the cache
+@shell   rm -rf $PROJECT/var/cache/* && echo "Magento Cache cleared"

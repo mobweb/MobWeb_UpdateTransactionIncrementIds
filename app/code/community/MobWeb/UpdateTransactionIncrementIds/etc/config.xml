@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <MobWeb_UpdateTransactionIncrementIds>
+            <version>0.0.1</version>
+        </MobWeb_UpdateTransactionIncrementIds>
+    </modules>
+    <global>
+        <helpers>
+            <MobWeb_UpdateTransactionIncrementIds>
+                <class>MobWeb_UpdateTransactionIncrementIds_Helper</class>
+            </MobWeb_UpdateTransactionIncrementIds>
+        </helpers>
+        <models>
+            <MobWeb_UpdateTransactionIncrementIds>
+                <class>MobWeb_UpdateTransactionIncrementIds_Model</class>
+            </MobWeb_UpdateTransactionIncrementIds>
+        </models>
+    </global>
+    <crontab>
+        <jobs>
+            <MobWeb_UpdateTransactionIncrementIds>
+                <schedule><cron_expr>0 0 1 * *</cron_expr></schedule>
+                <run><model>MobWeb_UpdateTransactionIncrementIds/cronJob::run</model></run>
+            </MobWeb_UpdateTransactionIncrementIds>
+        </jobs>
+    </crontab>
+</config>
