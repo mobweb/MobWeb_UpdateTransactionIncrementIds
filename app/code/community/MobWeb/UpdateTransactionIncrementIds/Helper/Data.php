@@ -27,6 +27,11 @@ class MobWeb_UpdateTransactionIncrementIds_Helper_Data extends Mage_Core_Helper_
         // Loop through the stores
         foreach(Mage::app()->getStores() AS $store) {
 
+            // Skip inactive stores
+            if(!$store->getIsActive()) {
+                continue;
+            }
+
             // Loop through the entities and update their increment IDs
             foreach($prefixes AS $entityTypeCode => $prefix) {
 
