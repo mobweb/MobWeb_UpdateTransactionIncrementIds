@@ -20,7 +20,7 @@
     <crontab>
         <jobs>
             <MobWeb_UpdateTransactionIncrementIds>
-                <schedule><cron_expr>0 0 1 * *</cron_expr></schedule>
+                <schedule><cron_expr>0 6 1 * *</cron_expr></schedule>
                 <run><model>MobWeb_UpdateTransactionIncrementIds/cronJob::run</model></run>
             </MobWeb_UpdateTransactionIncrementIds>
         </jobs>
