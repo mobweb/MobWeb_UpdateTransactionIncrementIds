@@ -31,7 +31,7 @@ class MobWeb_UpdateTransactionIncrementIds_Helper_Data extends Mage_Core_Helper_
             foreach($prefixes AS $entityTypeCode => $prefix) {
 
                 // For the prefix, use the identifying letter for each entity type and the current year and month
-                $prefix .= date('Ym');
+                $prefix .= date('ym');
 
                 // Start the numbering at 1001
                 $lastId = '1000';
